@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KekeRide - Book Your Ride</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header">
+            <a href="#" class="logo">KEKE<span>RIDE</span></a>
+            <div class="user-menu">
+                <i class="fas fa-bell"></i>
+                <div class="user-icon">JD</div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Map Section -->
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h2>Interactive Map</h2>
+                    <p>Your ride will be displayed here</p>
+                </div>
+                <div class="current-location">
+                    <i class="fas fa-location-arrow"></i>
+                </div>
+            </div>
+
+            <!-- Booking Panel -->
+            <div class="booking-panel">
+                <h2 class="panel-title">Book a Ride</h2>
+                
+                <!-- Location Inputs -->
+                <div class="location-inputs">
+                    <div class="input-group">
+                        <i class="fas fa-circle"></i>
+                        <input type="text" placeholder="Current location" value="Times Square, New York">
+                    </div>
+                    <div class="input-divider"></div>
+                    <div class="input-group">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" placeholder="Where to?" value="JFK Airport">
+                    </div>
+                </div>
+
+                <!-- Ride Options -->
+                <div class="ride-options">
+                    <div class="ride-option selected" data-type="economy">
+                        <div class="ride-icon" style="background-color: #3dcf5e;">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <div class="ride-details">
+                            <div class="ride-name">KEKERIDE X</div>
+                            <div class="ride-time">5 min away</div>
+                        </div>
+                        <div class="ride-price">#1,500</div>
+                    </div>
+                    
+                    <div class="ride-option" data-type="comfort">
+                        <div class="ride-icon" style="background-color: #1a73e8;">
+                            <i class="fas fa-car-side"></i>
+                        </div>
+                        <div class="ride-details">
+                            <div class="ride-name">KEKERIDE COMFORT</div>
+                            <div class="ride-time">7 min away</div>
+                        </div>
+                        <div class="ride-price">#2,000</div>
+                    </div>
+                    
+                    <div class="ride-option" data-type="premium">
+                        <div class="ride-icon" style="background-color: #6c5ce7;">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="ride-details">
+                            <div class="ride-name">KEKERIDE PREMIUM</div>
+                            <div class="ride-time">10 min away</div>
+                        </div>
+                        <div class="ride-price">#3,000</div>
+                    </div>
+                </div>
+
+                <!-- Driver Info -->
+                <div class="driver-info" id="driverInfo">
+                    <div class="driver-header">
+                        <div class="driver-details">
+                            <div class="driver-avatar">MJ</div>
+                            <div class="driver-name-rating">
+                                <h4>Michael Johnson</h4>
+                                <div class="driver-rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                    4.7
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-info">
+                            <div>Hyundai Sonata</div>
+                            <div>ABC 1234</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Book Button -->
+                <button class="book-btn" id="bookBtn">Confirm RideShareX</button>
+
+                <!-- Ride in Progress -->
+                <div class="ride-progress" id="rideProgress">
+                    <h3>Your driver is on the way</h3>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>
+                    <div class="eta">ETA: 5 min</div>
+                    <p>Michael Johnson is arriving in a Hyundai Sonata</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+
+    </script>
+</body>
+</html>
